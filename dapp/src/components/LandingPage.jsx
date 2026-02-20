@@ -129,8 +129,8 @@ const features = [
   },
   {
     icon: Lock,
-    title: "Admin-Only Issuance",
-    desc: "Only the authorized institution wallet can issue — enforced by the smart contract.",
+    title: "Open Issuance",
+    desc: "Any connected wallet can issue certificates — no gatekeepers, fully decentralized.",
     gradient: "from-purple-400 to-pink-400",
   },
   {
@@ -154,8 +154,8 @@ const steps = [
   {
     icon: Building2,
     num: "01",
-    title: "Institution Issues",
-    desc: "The authorized admin uploads the certificate hash via the CertChain DApp.",
+    title: "User Issues",
+    desc: "Any connected wallet uploads the certificate details via the CertChain DApp.",
     accent: "cyan",
   },
   {
@@ -256,7 +256,6 @@ export default function LandingPage({ onNavigate }) {
                          bg-white/5 backdrop-blur-sm border border-white/10 text-slate-300
                          hover:bg-white/10 hover:text-white transition-all duration-300"
             >
-              Admin Login
             </button>
           </motion.div>
         </motion.div>
@@ -449,11 +448,9 @@ export default function LandingPage({ onNavigate }) {
                 <div className="flex h-14 w-14 items-center justify-center rounded-xl bg-purple-500/10
                                 ring-1 ring-purple-500/20 transition-all duration-300
                                 group-hover:bg-purple-500/20 group-hover:ring-purple-500/40">
-                  <Lock className="w-6 h-6 text-purple-400" />
+                  <FileCheck className="w-6 h-6 text-purple-400" />
                 </div>
                 <div className="text-center">
-                  <h3 className="text-lg font-semibold text-white mb-1">Admin Portal</h3>
-                  <p className="text-sm text-slate-500">Issue &amp; manage certificates</p>
                 </div>
                 <ArrowRight className="w-4 h-4 text-slate-600 transition-all duration-300
                                        group-hover:text-purple-400 group-hover:translate-x-1" />

@@ -13,7 +13,7 @@ const networkName = (id) => {
   return `Chain ${id}`;
 };
 
-export default function Navbar({ account, chainId, onConnect, activeTab, onTabChange, isAdmin }) {
+export default function Navbar({ account, chainId, onConnect, activeTab, onTabChange }) {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
@@ -49,18 +49,16 @@ export default function Navbar({ account, chainId, onConnect, activeTab, onTabCh
           >
             Verify
           </button>
-          {isAdmin && (
-            <button
-              onClick={() => onTabChange("admin")}
-              className={`px-4 py-2 rounded-xl text-sm font-medium transition-all duration-200 ${
-                activeTab === "admin"
-                  ? "bg-white/10 text-cyan-400"
-                  : "text-slate-400 hover:text-white hover:bg-white/10"
-              }`}
-            >
-              Admin Panel
-            </button>
-          )}
+          <button
+            onClick={() => onTabChange("admin")}
+            className={`px-4 py-2 rounded-xl text-sm font-medium transition-all duration-200 ${
+              activeTab === "admin"
+                ? "bg-white/10 text-cyan-400"
+                : "text-slate-400 hover:text-white hover:bg-white/10"
+            }`}
+          >
+            Issue Certificate
+          </button>
         </div>
 
         {/* ── Desktop wallet badge ── */}
@@ -138,18 +136,16 @@ export default function Navbar({ account, chainId, onConnect, activeTab, onTabCh
                 >
                   Verify
                 </button>
-                {isAdmin && (
-                  <button
-                    onClick={() => { onTabChange("admin"); setMenuOpen(false); }}
-                    className={`flex-1 px-4 py-2 rounded-xl text-sm font-medium transition-all duration-200 ${
-                      activeTab === "admin"
-                        ? "bg-white/10 text-cyan-400"
-                        : "text-slate-400 hover:text-white hover:bg-white/10 border border-white/10"
-                    }`}
-                  >
-                    Admin Panel
-                  </button>
-                )}
+                <button
+                  onClick={() => { onTabChange("admin"); setMenuOpen(false); }}
+                  className={`flex-1 px-4 py-2 rounded-xl text-sm font-medium transition-all duration-200 ${
+                    activeTab === "admin"
+                      ? "bg-white/10 text-cyan-400"
+                      : "text-slate-400 hover:text-white hover:bg-white/10 border border-white/10"
+                  }`}
+                >
+                  Issue Certificate
+                </button>
               </div>
 
               {account ? (

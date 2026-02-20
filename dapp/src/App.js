@@ -7,7 +7,7 @@ import Navbar from "./components/Navbar";
 import LandingPage from "./components/LandingPage";
 import AdminPanel from "./components/AdminPanel";
 import VerifyPanel from "./components/VerifyPanel";
-import { CONTRACT_ADDRESS, CONTRACT_ABI, ADMIN_ADDRESS, CHAIN_ID, NETWORK_NAME } from "./contract";
+import { CONTRACT_ADDRESS, CONTRACT_ABI, CHAIN_ID, NETWORK_NAME } from "./contract";
 
 import "./App.css";
 
@@ -34,7 +34,6 @@ function App() {
   const [chainId, setChainId] = useState(null);
   const [signer, setSigner] = useState(null);
   const [contract, setContract] = useState(null);
-  const [isAdmin, setIsAdmin] = useState(false);
   const [walletError, setWalletError] = useState(null);
 
   /* ═══════════ NETWORK CHECK ═══════════ */
@@ -77,7 +76,6 @@ function App() {
     setSigner(sig);
     setAccount(addr);
     setContract(cert);
-    setIsAdmin(addr.toLowerCase() === ADMIN_ADDRESS.toLowerCase());
   } catch (err) {
     console.error(err);
   }
@@ -92,7 +90,6 @@ function App() {
         setAccount(null);
         setSigner(null);
         setContract(null);
-        setIsAdmin(false);
         toast("Wallet disconnected", { icon: "👋" });
       } else {
         connectWallet();
@@ -153,7 +150,6 @@ function App() {
         onConnect={connectWallet}
         activeTab={view}
         onTabChange={handleNavigate}
-        isAdmin={isAdmin}
       />
 
       {/* ── Wrong-network blocking overlay ── */}
