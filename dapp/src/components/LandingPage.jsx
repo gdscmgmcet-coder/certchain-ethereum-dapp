@@ -256,6 +256,7 @@ export default function LandingPage({ onNavigate }) {
                          bg-white/5 backdrop-blur-sm border border-white/10 text-slate-300
                          hover:bg-white/10 hover:text-white transition-all duration-300"
             >
+              Issue Certificate
             </button>
           </motion.div>
         </motion.div>
@@ -451,6 +452,8 @@ export default function LandingPage({ onNavigate }) {
                   <FileCheck className="w-6 h-6 text-purple-400" />
                 </div>
                 <div className="text-center">
+                  <h3 className="text-lg font-semibold text-white mb-1">Issue Certificate</h3>
+                  <p className="text-sm text-slate-500">Register credentials on-chain</p>
                 </div>
                 <ArrowRight className="w-4 h-4 text-slate-600 transition-all duration-300
                                        group-hover:text-purple-400 group-hover:translate-x-1" />
