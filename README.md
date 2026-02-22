@@ -12,7 +12,6 @@ A hybrid **on-chain / off-chain** DApp that lets administrators issue tamper-pro
 [![Ethers.js](https://img.shields.io/badge/Ethers.js-v6-3C3C3D)](https://docs.ethers.org/v6/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.x-06B6D4?logo=tailwindcss)](https://tailwindcss.com/)
 [![Express](https://img.shields.io/badge/Express-5.x-000000?logo=express)](https://expressjs.com/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
 </div>
 
@@ -492,12 +491,6 @@ CertChain uses a **dark cinematic** theme with glassmorphism and neon accents.
 | Hover effects | Tailwind + Framer | Scale, glow, gradient shifts |
 | Expand/collapse | Framer Motion | Assets viewer, status panels |
 | Glow pulse | Tailwind keyframes | Hero section accent |
-
----
-
-## 📝 License
-
-This project is licensed under the **MIT License** — see the [LICENSE](LICENSE) file for details.
 
 ---
 
