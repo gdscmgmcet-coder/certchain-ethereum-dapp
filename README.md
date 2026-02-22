@@ -467,33 +467,6 @@ Static file serving for uploaded PDFs and photos.
 
 ---
 
-## 🎨 Design System
-
-CertChain uses a **dark cinematic** theme with glassmorphism and neon accents.
-
-| Token | Value | Usage |
-|---|---|---|
-| Background | `slate-950` (#020617) | Page background |
-| Surface | `white/5` | Glassmorphism cards |
-| Border | `white/10` | Subtle card borders |
-| Primary | `cyan-500` (#06B6D4) | Buttons, links, accents |
-| Secondary | `purple-600` (#9333EA) | Gradient endpoints |
-| Success | `emerald-400` (#34D399) | Verified badges, success states |
-| Warning | `amber-400` (#FBBF24) | Hash-only / fallback states |
-| Error | `red-400` (#F87171) | Error messages |
-| Text | `white` / `slate-400` | Primary / secondary text |
-
-### Animations
-
-| Animation | Library | Usage |
-|---|---|---|
-| Page transitions | Framer Motion | `AnimatePresence` view switching |
-| Hover effects | Tailwind + Framer | Scale, glow, gradient shifts |
-| Expand/collapse | Framer Motion | Assets viewer, status panels |
-| Glow pulse | Tailwind keyframes | Hero section accent |
-
----
-
 <div align="center">
 
 **Built with ❤️ using Ethereum, React & Express**
